@@ -1,0 +1,10 @@
+# 设置参考
+# https://github.com/bitnami/charts/blob/master/bitnami/mongodb/values.yaml
+---
+architecture: "{{ mongodb_architecture }}"
+auth:
+  enabled: "{{ mongodb_auth_enabled }}"
+replicaCount: {{ mongodb_replicas }}
+persistence:
+  storageClass: "{{ mongodb_storage_class }}"
+  size: "{{ mongodb_storage_size }}"

@@ -1,11 +1,12 @@
 ---
-namespace: data
-storage_class: "-"
 mongodb_state: present
+mongodb_namespace: data
+
+mongodb_storage_class:
 
 mongodb_auth_enabled: false
-mongodb_root_password: "it_is_a_secret"
 mongodb_storage_size: 8Gi
+mongodb_root_password: "it_is_a_secret"
 
 ## MongoDB(R) architecture. Allowed values: standalone or replicaset
 mongodb_architecture: "standalone"
