@@ -1,8 +1,14 @@
 ---
-mongodb_state: present
-mongodb_namespace: data
+state: present
+namespace: data
+storage_class: "-"
+cert_issuer: "letsencrypt-http"
+wait: no
 
-mongodb_storage_class:
+mongodb_state: "{{ state }}"
+mongodb_namespace: "{{ namespace }}"
+
+mongodb_storage_class: "{{ storage_class }}"
 
 mongodb_auth_enabled: false
 mongodb_storage_size: 8Gi

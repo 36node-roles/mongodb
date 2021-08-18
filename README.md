@@ -24,3 +24,12 @@ kubectl port-forward --namespace data svc/mongodb-headless 27017:27017
 ```
 kubectl -n data port-forward mongodb-0 37017:27017
 ```
+
+## Develop guide
+
+Link to local installed role for convenience.
+
+```
+rm -rf /Users/zzs/.ansible/roles/36node.mongodb
+ln -s $PWD /Users/zzs/.ansible/roles/36node.mongodb
+```
