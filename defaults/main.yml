@@ -17,6 +17,8 @@ mongodb_root_password: "it_is_a_secret"
 ## MongoDB(R) architecture. Allowed values: standalone or replicaset
 mongodb_architecture: "standalone"
 
+mongodb_chart_version: 12.1.20
+
 # Ignored when mongodb_architecture=standalone
 mongodb_replicas: 2
 
