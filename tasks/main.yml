@@ -12,7 +12,7 @@
     namespace: "{{ mongodb_namespace }}"
     create_namespace: true
     chart_ref: bitnami/mongodb
-    chart_version: "{{ mongodb_chart_version }}"
+    # chart_version: "{{ mongodb_chart_version }}"
     # 若values文件中有 "{{ xxx }}" 的值，可以采用 "[% xxx %]" 的方式，如下
     # values: "{{ lookup('template', 'mongodb_values.yml.j2', variable_start_string='[%', variable_end_string='%]') | from_yaml | combine(mongodb_chart_values, recursive=True) }}"
     values: "{{ lookup('template', 'mongodb_values.yml.j2') | from_yaml | combine(mongodb_chart_values, recursive=True) }}"
